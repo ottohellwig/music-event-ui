@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LOREM IPSUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Buttons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookingHistory.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary btn-space" href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Event Card -->
+    <section>
+        <div class="container ed-hero-section">
+            <div class="row">
+                <div class="col-md-auto ed-image-padding">
+                    <img src="images/evt_card1.jpg" class="card-img-top">
+                </div>
+                <div class="col">
+                    <div class="text-start text-padding">
+                        <p>DD/MM/YY</p>
+                        <h1>Event Name</h1>
+                        <p>Featuring Artist/s Name/s</p>
+                        <p>Location</p>
+                        <p style="color: lightgreen;">Open</p>
+                        <!-- Modal Trigger Button -->
+                        <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Buy Tickets
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Buttons -->
+    <section class="hero-btns">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-auto ed-image-padding">
+                    <div class="button" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-secondary btn-md">Event Type</button>
+                        <button type="button" class="btn btn-outline-secondary btn-md">Genre</button>
+                        <button type="button" class="btn btn-outline-secondary btn-md">#Lorem Ipsum</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- Ticket Checkout Form (Modal Body) -->
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h2>Event Details</h2>
+                                    <hr>
+                                    <p><strong>Event Name:</strong> Lorem Ipsum</p>
+                                    <p><strong>Date:</strong> Month DD, YYYY</p>
+                                    <p><strong>Time:</strong> XX:XX AM/PM - XX:XX AM/PM</p>
+                                    <p><strong>Location:</strong> Lorem Ipsum</p>
+                                    <p><strong>Conditions of Ticket</strong></p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id leo tincidunt,
+                                        interdum metus sed, rhoncus quam. Duis ultricies lacus nec orci auctor
+                                        efficitur.
+                                        Donec venenatis imperdiet facilisis. Aenean tortor velit, gravida vel commodo
+                                        ac,
+                                        condimentum et leo. Nulla hendrerit tincidunt erat ut rhoncus.</p>
+                                </div>
+                                <!-- Order Summary -->
+                                <div class="col-md-4">
+                                    <h2>Order Summary</h2>
+                                    <hr>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ticket Type</h5>
+                                            <p class="card-text">Description of ticket type.</p>
+                                            <h5 class="card-title">Ticket Availability</h5>
+                                            <p class="card-text">XX</p>
+                                            <h5 class="card-title">Price</h5>
+                                            <p class="card-text">$XX.XX</p>
+                                            <h5 class="card-title">Quantity</h5>
+                                            <div class="input-group mb-3 ticket-quantity-container">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary minus-btn"
+                                                        type="button">-</button>
+                                                </div>
+                                                <input type="text" class="form-control qty-input" value="1">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary plus-btn"
+                                                        type="button">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Footer Buttons -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark text-white">Apply Promocode</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-auto ed-image-padding">
+                    <div class="button" role="group" aria-label="Basic outlined example">
+                        <h3><b>When and Where</b></h3>
+                        <div class="row">
+                            <div class="col">
+                                <h4><b>Date and Time</b></h4>
+                                <p style="white-space: nowrap;"> Day, DD/MM/YY XX:XX - Day, DD/MM/YY XX:XX Timezone</p>
+                            </div>
+                            <div class="col ps-5">
+                                <div style="border-left: 1px solid #ccc; height: 80%; padding-left: 40px;">
+                                    <h4><b>Location</b></h4>
+                                    <p style="white-space: nowrap;">Building Name, Street Address, City, State,
+                                        Postcode, Country</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Description -->
+    <section>
+        <div class="container event-description">
+            <div class="row">
+                <div class="col-md-auto ed-image-padding">
+                    <h3><b>Event Description</b></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id leo tincidunt, interdum metus
+                        sed, rhoncus quam. Duis ultricies lacus nec orci auctor efficitur. Donec venenatis imperdiet
+                        facilisis. Aenean tortor velit, gravida vel commodo ac, condimentum et leo. Nulla hendrerit
+                        tincidunt erat ut rhoncus. Maecenas in lorem et metus finibus pellentesque. Mauris sollicitudin
+                        vitae velit eu suscipit. Donec dictum, nisi ut suscipit lacinia, est ante accumsan libero, sed
+                        ultrices eros sem ac augue. Fusce non quam eget ipsum faucibus consequat vel eu nulla. Nam
+                        volutpat in augue ac tempus. Cras malesuada dolor sed tortor porttitor pharetra. Morbi venenatis
+                        elementum velit, pretium lobortis mi consequat non.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section>
+        <div class="container comment-section">
+            <div class="row">
+                <div class="col-md-auto ed-image-padding">
+                    <div class="comment-section">
+                        <h3><b>Comments</b></h3>
+                        <div class="comment-list">
+                            <div class="comment">
+                                <p class="mb-1"><b>Username</b></p>
+                                <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                                    euismod risus id risus vestibulum, id malesuada orci lacinia. Nullam at commodo
+                                    massa, vitae vehicula nisi. Aliquam erat volutpat. </p>
+                                <small class="d-block mb-4">Posted on: YYYY-MM-DD XX:XX:XX</small>
+                            </div>
+                            <div class="comment">
+                                <p class="mb-1"><b>Username</b></p>
+                                <p class="comment-text">Duis consequat orci tellus, sit amet vulputate velit tincidunt
+                                    vel. Vivamus gravida metus non nibh lacinia, a consequat lorem euismod. Donec vel
+                                    felis euismod, fermentum lorem at, posuere tortor.</p>
+                                <small class="d-block mb-3">Posted on: YYYY-MM-DD XX:XX:XX</small>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- User Comment Form -->
+                        <h5>Leave a Comment</h5>
+                        <form>
+                            <div class="form-group">
+                                <textarea class="form-control" id="comment-body" rows="3"
+                                    placeholder="Write your comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+.nav-link.btn-primary {
+    background-color: black;
+    color: white;
+}
+
+.nav-link.btn-primary.btn-space {
+    margin-left: 20px;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+.btn-outline-secondary {
+    color: black;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.hero-section {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.button-section {
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+
+.genre-widebutton {
+    width: 240px;
+}
+
+.event-buttonmod {
+    width: 200px;
+    height: 100px;
+}
+
+.btn-space {
+    width: 150px;
+}
+
+.btn-login {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+/* eventDetails box align for image and event details */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-column {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* launchModal widebutton */
+.modal-widebutton {
+    margin-bottom: auto;
+    width: 220px;
+    height: 60px;
+    color: white;
+}
+
+.eventCardDetails {
+    background-color: rgb(25, 20, 20);
+    color: white;
+}
+
+.eventTypeRow {
+    margin-top: 15px;
+}
+
+.ed-hero-section {
+    background-color: #141618;
+    color: white;
+}
+
+.ed-image-padding {
+    padding: 0px;
+}
+
+.text-padding {
+    padding: 60px;
+    padding-left: 60px;
+}
+
+.hero-btns {
+    margin-top: -35px;
+    margin-bottom: 35px;
+}
+
+.comment-section {
+    margin-top: 10px;
+}
+
+.event-description {
+    margin-top: 15px;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ticket-quantity {
+    width: auto;
+    max-width: 130px;
+}
+
+.ticket-quantity-container {
+    max-width: 130px;
+}
+
+.bookingcard {
+    margin-top: -40px;
+    padding-top: 0;
+}
+
+#sort-by {
+    margin-left: 4px;
+  }
